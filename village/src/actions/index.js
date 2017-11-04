@@ -13,7 +13,7 @@ export const getSmurfs = () => {
 }
 
 export const addSmurf = (smurf) => {
-  console.log(axios.post('http://localhost:3333/smurfs', smurf));
+  axios.post('http://localhost:3333/smurfs', smurf);
   return {
     type: ADD_SMURF,
     payload: smurf

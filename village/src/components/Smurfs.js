@@ -11,12 +11,12 @@ class Smurfs extends Component {
   }
 
   componentDidMount() {
-    const smurfs = this.props.getSmurfs();
-    console.log(smurfs)
+    const smurfs = this.props.fetchSmurfs();
+    console.log("smurfs", smurfs)
     this.setState({
       smurfs
     })
-    console.log(this.state)
+    console.log("state", this.state)
   }
 
   render() {
